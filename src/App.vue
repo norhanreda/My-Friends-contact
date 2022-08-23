@@ -1,10 +1,19 @@
 <template>
   <section>
-    <h2>My friends</h2>
-    
-      <friend-contact> </friend-contact>
-      <friend-contact> </friend-contact>
-   
+    <h2 id="logo">My friends</h2>
+
+    <friend-contact
+      name="norhan reda"
+      phone-number="01003874842"
+      email-address="norhanreda12345@gmail.com"
+    >
+    </friend-contact>
+    <friend-contact
+      name="nono"
+      phone-number="01003856656"
+      email-address="nono@gmail.com"
+    >
+    </friend-contact>
   </section>
 </template>
 
@@ -29,5 +38,14 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+#app #logo
+{
+background-color: palevioletred;
+padding: 1rem;
+margin: 1rem;
+border-color: black ;
+
 }
 </style>
