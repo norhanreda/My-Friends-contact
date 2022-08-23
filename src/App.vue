@@ -1,17 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <section>
+    <h2>My friends</h2>
+    
+      <friend-contact> </friend-contact>
+      <friend-contact> </friend-contact>
+   
+  </section>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import FriendContact from "./components/FriendContact.vue";
 
 export default {
-  name: 'App',
+  data() {
+    return {};
+  },
   components: {
-    HelloWorld
-  }
-}
+    FriendContact,
+  },
+};
 </script>
 
 <style>
